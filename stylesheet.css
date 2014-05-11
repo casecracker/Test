@@ -1,0 +1,53 @@
+hr.fancyline {
+    border: 0;
+    height: 1px;
+    clear: both;
+    position:relative;
+}
+hr.fancyline:before {
+    top: -0.5em;
+    height: 1em;
+}
+hr.fancyline:after {
+    content:'';
+    height: 0.5em;
+    top: 1px;
+}
+hr.fancyline:before, hr.fancyline:after {
+    content: '';
+    width: 100%;
+    position: absolute;
+}
+hr.fancyline, hr.fancyline:before {
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
+}
+.menu {
+    margin: auto;
+    padding-top: 40px;
+    color: #0c39ff;
+}
+.menu li{
+    list-style-type: none;
+    display: inline;
+    margin: 2em;
+    padding: 0 3px 0 3px;
+}
+.menu li:active {
+    background-color: lightblue;
+    padding-bottom: 1em;
+    border-left: solid blue 1px;
+    border-right:solid blue 1px;
+    border-top:solid blue 1px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.link_content {
+    background-color: lightblue;
+    padding: 0;
+    margin-top: -2px;
+    border-top: solid blue 1px;
+}
+.jobs {
+    padding: 10px 0 0 40px;
+    margin: auto;
+}
